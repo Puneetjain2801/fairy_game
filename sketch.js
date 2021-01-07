@@ -113,10 +113,10 @@ function make_borders(){
 	
 function checkforcollisions(){
 	if (fairy.x - star.x < (fairy.width + star.width)/2){
-		star.kill
+		star.velocityY = 0
 	}
 
 	if (fairy.y - star.y < (fairy.height + star.height)/2){
-		star.kill
+		star.velocityY = 0
 	}
 }
